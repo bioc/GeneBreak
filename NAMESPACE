@@ -1,0 +1,43 @@
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# IMPORTS
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+importClassesFrom( methods, character, logical, matrix, missing, numeric )
+importMethodsFrom( methods, coerce, initialize, show )
+importMethodsFrom( CGHbase, calls, segmented, chromosomes, bpstart, bpend )
+importMethodsFrom( GenomicRanges, seqnames, names, start, end )
+importFrom( graphics, abline, axis, box, mtext, par, points, rect, segments, text )
+importFrom( methods, callNextMethod, new )
+#importFrom( R.utils, downloadFile )
+#importFrom( utils, packageVersion, read.table, write.table )
+#importFrom( Biobase, featureNames )
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# EXPORTS
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## main workflow steps
+export( "getBreakpoints" )
+export( "bpFilter" )
+export( "addGeneAnnotation" )
+export( "bpGenes" )
+export( "bpStats" )
+
+## extra workflow steps
+export( "recurrentGenes" )
+export( "bpPlot" )
+
+## accessors
+export( "accessOptions" )
+export( "callData" )
+export( "segmentData" )
+export( "breakpointData" )
+export( "featureChromosomes" )
+export( "geneChromosomes" )
+export( "featureInfo" )
+export( "geneInfo" )
+export( "featuresPerGene" )
+export( "breakpointsPerGene" )
+export( "sampleNames" )
+export( "namesFeatures" )
+
+# EOF
