@@ -56,8 +56,9 @@ To load and run the example dataset, which is an object of class \code{CGHcall},
 \begin{Schunk}
 \begin{Sinput}
 > # Install the "CGHcall" package from Bioconductor:
-> # source("https://bioconductor.org/biocLite.R")
-> # biocLite("CGHcall")
+> # if (!requireNamespace("BiocManager", quietly=TRUE))
+    > # install.packages("BiocManager")
+> # BiocManager::install("CGHcall")
 \end{Sinput}
 \end{Schunk}
 
